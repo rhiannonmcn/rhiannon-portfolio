@@ -1,6 +1,6 @@
 /* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-
+ 
 :root {
   --lightText: #efefef;
   --darkBackground: #101010;
@@ -8,8 +8,9 @@
   --highlight: #fff;
   ---midtone: #959595;
 }
-
+ 
 * {
+    font-family:'Roboto', sans serif;
   color: var(--lightText);
   letter-spacing:3px;
   font-size: 14px;
@@ -17,80 +18,99 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+ 
 body{
     background-color: var(--darkBackground);
 }
-
+ 
 .row{
     margin:0;
 }
-
-.col{
-    padding:0;
-}
-
+ 
 /* Styles for mobile first */
-
+ 
 /* Navbar Styles */
-
+ 
 .navbar-toggler{
     border:none;
 }
-
+ 
 .navbar-toggler:focus{
     box-shadow: none;
-
+ 
 }
-
+ 
 .navbar-dark .navbar-nav .nav-link{
     color:var(--lightText);
 }
-
+ 
 .navbar-bg{
     background-color: var(--darkBackground);
 }
-
+ 
 .nav-item{
     padding: 0 13px;
 }
-
+ 
 /* Hero Section Styles */
-
+ 
 .hero-section{
     background-color: var(--darkBackground);
     max-width:100%;
     height:600px;
 }
-
+ 
 .hero-container{
     padding: 55px 0;
 }
-
+ 
 .hero-img-container{
     overflow:hidden;
+    padding: 0;
 }
-
+ 
 .hero-img{
-
     width:300px;
     height:300px;
-
 }
-
+ 
+.h1-container{
+    height:600px;
+}
+ 
+.h2-hero{
+    height:50px;
+}
+ 
 .hero-heading{
     font-size: 3rem;
     letter-spacing: 5px;
 }
-
+ 
+.typing{
+    font-size: 1.4rem;
+    letter-spacing:5px;
+    font-weight:400;
+}
+ 
 @media screen and (min-width: 900px){
-
+ 
     /* Hero Styles */
-
+ 
     .hero-img{
         height:600px;
         width:600px;
     }
-
-
+ 
+    .typing{
+        font-size: 2rem;
+        letter-spacing:6px;
+    }
+ 
+    .hero-heading{
+        font-size: 5rem;
+        letter-spacing: 7px;
+    }
+ 
+ 
 }
