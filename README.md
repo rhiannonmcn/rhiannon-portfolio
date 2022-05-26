@@ -1,108 +1,182 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Rhiannon McNulty - Portfolio Website**
 
-Welcome USER_NAME,
+This site is a portfolio website showcasing the work and skills of a single person. This site is intended to be designed and developed to showcase the skills of said person.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+You can view the live site here:
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Contents
 
-## Gitpod Reminders
+- [Objective](#objective)
+- [User Experience](#user-experience-ux)
+  - [Site Aims](#site-aims)
+  - [User Stories](#user-stories)
+  - [Design Wireframes](#design-wireframes)
+  - [Site Structure](#site-structure)
+  - [Design Choices](#design-choices)
+  - [Colour Scheme](#colour-scheme)
+  - [Typography](#typography)
+- [Features](#features)
+- [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+  - [Code Validation](#code-validation)
+  - [JSHint](#jshint)
+  - [Lighthouse Testing](#lighthouse-testing)
+  - [Accessibility Testing](#accessibility-testing)
+  - [Responsive Testing](#responsive-testing)
+  - [Manual Testing](#manual-testing)
+  - [Bugs Fixed](#bugs-fixed)
+  - [Unresolved Bugs](#unresolved-bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Objective
 
-`python3 -m http.server`
+The aim of this site is to deliver an visually intersting and engaging website that showcases the skills of the person by developing this website that reflects their skills. Wireframes and documentation, as well as use of the project and issues sections in github will be made use of to create this website.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+[Back to top](#contents)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# User Experience (UX)
 
-A blue button should appear to click: _Make Public_,
+## Site Aims
+- To showcase the skills and work of a person through an interactive website
+- To provide the user with all the information needed to contact the person
+- To sell the person as skilled and employable
+- To provide a visual portfolio of work done
+- To provide information on the person
 
-Another blue button should appear to click: _Open Browser_.
+## User Stories
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The **user** is any person who is interested in employing, working with or collaborating with sites subject.
 
-To log into the Heroku toolbelt CLI:
+| ID  | ROLE |                                   ACTION                                    |                               GOAL                               |
+| --- | :--- | :-------------------------------------------------------------------------: | :--------------------------------------------------------------: |
+| 1   | USER |           As a user, I want to be able to see the work this person has done | So I can determine the quality of work they produce
+| 2   | USER |    As a user, I want their website to reflect their software development skills| As this is a good skill indication of the person
+| 3   | USER |      As a user, I want to be able to have a clear undestanding of the skills of this person      | So I can determine if their skills match what I am looking for |
+| 4   | USER |            As I want this persons contact details to be available            |                    So I can contact this person                   |
+| 5   | USER |       As a user, I want to be able to see any relevant portfolio links (LinkedIn etc)        |                     So I can have a good idea of the work this person does                    |
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Design Wireframes
+<details><summary>High fidelity desktop wireframes</summary>
 
-------
+![Desktop wireframe view](docs/wireframes/desktop-wireframe.png)
 
-## Release History
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<details> <summary> High fidelity tablet wireframes</summary>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Tablet wireframe view](docs/wireframes/tablet-wireframe.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+</details>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<details> <summary> High fidelity phone wireframes</summary>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![mobile wireframe view](docs/wireframes/mobile-wireframe.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+</details>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Site Structure
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+This website consists of a 2 page website; The Home page primarily acts as a single scrolling page for all sections, with the portfolio page having the ability to be expanded on a different page to view more information on the various portfolio works. On the right top is the navigation bar, that includes links to each of the sections on the home page. It is a fixed bar that remains visible on the users screen at all times.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Design Choices
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Colour Scheme
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The final color scheme chosen is an off, almost matte like black, with an off white text and section background. A lighter black and mid grey is used for subtle sectioning with the pure white being used as a highlight. The colors were chosen to create a clean and minimal design throughout the website.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Color scheme choosen](docs/images/color-scheme.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Typography
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+There is only one font type chose, keeping in line with the clean design that is throughout the entire site, which is Roboto. Various weights and sizes are used to achieve emphasis and distinguish between headings and text blocks. Making use of letter spacing and line heights really give way to that modern, clean feel.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+[Back to top](#contents)
 
-------
+# Features
 
-## FAQ about the uptime script
+[Back to top](#contents)
 
-**Why have you added this script?**
+# Technologies Used
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- HTML5 - Delivers the structure and content for the site.
+- CSS3 - Provides the styling for the site
+- Javascript -Provides functionality to the site
+- Google Chrome DevTools - Used to debug and test responsiveness of the site
+- Gitpod - Used to develop the website.
+- GitBash - Terminal used to push changes to the GitHub repository.
+- GitHub - Used to host and deploy the website.
 
-**How will this affect me?**
+[Back to top](#contents)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Testing
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Code Validation
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+## JSHint
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+## Responsive Testing
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+[Back to top](#contents)
 
-**Anything more?**
+## Manual Testing
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+[Back to top](#contents)
 
-Happy coding!
+## Bugs Fixed
+
+
+[Back to top](#contents)
+
+## Unresolved Bugs
+
+
+[Back to top](#contents)
+
+# Deployment
+
+The website was deployed to GitHub pages via the following methods:
+
+1. Navigate to the Settings tab in the GitHub repository for the project.
+2. On the left hand side, scroll down to the pages tab.
+3. Under the Source tab, choose the branch called Main and in the dropdown beside it select the folder called Root.
+4. Click save.
+5. The page automatically displays the deployed link at the top once save is clicked.
+6. It can take up to 5 minutes to deploy.
+
+## To fork the repository on GitHub
+
+A copy of the GitHub Repository can be made by forking the GitHub account. Changes can be made on this copy without affecting the original repository.
+
+1. Log in to GitHub and locate the repository in question.
+2. Locate the Fork button which can be found in the top corner, right-hand side of the page, inline with the repository name.
+3. Click this button to create a copy of the original repository in your GitHub Account.
+
+## To clone the repository on GitHub
+
+1. Click on the code button which is underneath the main tab and repository name to the right.
+2. In the 'Clone with HTTPS' section, click on the clipboard icon to copy the URL.
+3. Open Git Bash in your IDE of choice.
+4. Change the current working directory to where you want the cloned directory to be made.
+5. Type git clone, and then paste the URL copied from GitHub.
+6. Press enter and the clone of your repository will be created.
+
+[Back to top](#contents)
+
+# Credits
+
+
+[Back to top](#contents)
+
+# Acknowledgements
+
+
+[Back to top](#contents)
