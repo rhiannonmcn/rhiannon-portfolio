@@ -1,116 +1,218 @@
 /* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
- 
+
 :root {
-  --lightText: #efefef;
+  --light: #efefef;
   --darkBackground: #101010;
   --darkText: #242424;
   --highlight: #fff;
   ---midtone: #959595;
 }
- 
+
 * {
-    font-family:'Roboto', sans serif;
-  color: var(--lightText);
-  letter-spacing:3px;
+  font-family: "Roboto", sans serif;
+  color: var(--light);
+  letter-spacing: 3px;
   font-size: 14px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
- 
-body{
-    background-color: var(--darkBackground);
+
+body {
+  background-color: var(--darkBackground);
 }
- 
-.row{
-    margin:0;
+
+.row {
+  margin: 0;
 }
- 
+
 /* Styles for mobile first */
- 
+
 /* Navbar Styles */
- 
-.navbar-toggler{
-    border:none;
+
+.navbar-toggler {
+  border: none;
 }
- 
-.navbar-toggler:focus{
-    box-shadow: none;
- 
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
- 
-.navbar-dark .navbar-nav .nav-link{
-    color:var(--lightText);
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--light);
 }
- 
-.navbar-bg{
-    background-color: var(--darkBackground);
+
+.navbar-bg {
+  background-color: var(--darkBackground);
 }
- 
-.nav-item{
-    padding: 0 13px;
+
+.nav-item {
+  padding: 0 13px;
 }
- 
+
 /* Hero Section Styles */
- 
-.hero-section{
-    background-color: var(--darkBackground);
-    max-width:100%;
-    height:600px;
+
+.hero-section {
+  background-color: var(--darkBackground);
+  max-width: 100%;
+  height: 650px;
 }
- 
-.hero-container{
-    padding: 55px 0;
+
+.hero-container {
+  padding: 21px 0;
 }
- 
-.hero-img-container{
-    overflow:hidden;
-    padding: 0;
+
+.hero-img-container {
+  overflow: hidden;
+  padding: 0;
 }
- 
-.hero-img{
-    width:300px;
-    height:300px;
+
+.hero-img {
+  width: 300px;
+  height: 300px;
 }
- 
-.h1-container{
-    height:600px;
+
+.h1-container {
+  height: 600px;
 }
- 
-.h2-hero{
-    height:50px;
+
+.h2-hero {
+  height: 50px;
 }
- 
-.hero-heading{
-    font-size: 3rem;
-    letter-spacing: 5px;
+
+.hero-heading {
+  font-size: 3rem;
+  letter-spacing: 5px;
 }
- 
-.typing{
-    font-size: 1.4rem;
-    letter-spacing:5px;
-    font-weight:400;
+
+.typing {
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+  font-weight: 400;
 }
- 
-@media screen and (min-width: 900px){
- 
-    /* Hero Styles */
- 
-    .hero-img{
-        height:600px;
-        width:600px;
-    }
- 
-    .typing{
-        font-size: 2rem;
-        letter-spacing:6px;
-    }
- 
-    .hero-heading{
-        font-size: 5rem;
-        letter-spacing: 7px;
-    }
- 
- 
+
+/*Portfolio styles here */
+
+#portfolio {
+  background-color: var(--light);
+  padding: 34px 0;
+}
+
+.h1-portfolio {
+  color: var(--darkText);
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin: 34px 0;
+}
+
+.heading-underline::after {
+  content: "";
+  height: 1px;
+  width: 20%;
+  position: absolute;
+  background-color: var(---midtone);
+  left: calc(50% - 10%);
+  bottom: 0;
+}
+
+.portfolio-container {
+  padding: 21px;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light);
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  margin: 2px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(239, 239, 239, 0.6);
+  visibility: hidden;
+}
+
+.portfolio-item:hover .slider-overlay {
+  visibility: visible;
+  animation: fade 0.5s;
+}
+
+.item-link {
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+  color: var(--darkText);
+  border-radius: 2px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.item-link:hover {
+  color: var(--light);
+  background-color: var(--darkBackground);
+  transition: all ease 0.3s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* Hero Styles */
+
+  .hero-img {
+    height: 600px;
+    width: 600px;
+  }
+
+  .typing {
+    font-size: 2rem;
+    letter-spacing: 6px;
+  }
+
+  .hero-heading {
+    font-size: 5rem;
+    letter-spacing: 7px;
+  }
+
+  /*Portfolio Styles*/
+
+  .portfolio-item {
+    margin: 13px;
+  }
+  
+
+
 }
