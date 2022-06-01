@@ -94,12 +94,14 @@ body {
 
 /*Portfolio styles here */
 
-#portfolio {
+#portfolio,
+#skills {
   background-color: var(--light);
   padding: 34px 0;
 }
 
-.h1-portfolio {
+.h1-portfolio,
+.h1-skills {
   font-size: 1.8rem;
   color: var(--darkText);
   font-weight: 400;
@@ -110,7 +112,7 @@ body {
   position: relative;
   display: inline-block;
   padding-bottom: 8px;
-  margin: 34px 0;
+  margin: 55px 0;
 }
 
 .heading-underline::after {
@@ -190,6 +192,25 @@ body {
   }
 }
 
+/* Skills Section Styles here */
+
+.icon-container{
+  margin: 21px 0;
+}
+
+.skill-icon:hover{
+  animation: shake 0.5s infinite;
+  cursor:pointer;
+}
+
+@keyframes shake {
+  0%{ transform: rotate(0deg);}
+  25%{ transform: rotate(5deg);}
+  50%{ transform: rotate(0deg);}
+  75%{ transform: rotate(-5deg);}
+  100%{ transform: rotate(0deg);}
+}
+
 @media screen and (min-width: 900px) {
   /* Hero Styles */
 
@@ -212,5 +233,12 @@ body {
 
   .portfolio-item {
     margin: 13px;
+  }
+
+  /*Skills Styles */
+
+  .skill-icon{
+    width:150px;
+    height:150px;
   }
 }
