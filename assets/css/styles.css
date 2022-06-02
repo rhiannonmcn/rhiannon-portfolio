@@ -73,6 +73,12 @@ body {
   padding: 0 13px;
 }
 
+/*Footer Styles */
+
+.footer-icons-container{
+  padding: 55px 21px 21px 21px;
+}
+
 /* Hero Section Styles */
 
 .hero-section {
