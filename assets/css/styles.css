@@ -375,13 +375,6 @@ input:-webkit-autofill:active {
     margin: 13px;
   }
 
-  /*Skills Styles */
-
-  .skill-icon {
-    width: 150px;
-    height: 150px;
-  }
-
   /* About Me Styles */
 
   .text-container {
